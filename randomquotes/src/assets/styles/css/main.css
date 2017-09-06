@@ -4,24 +4,82 @@
   padding: 0; }
 
 button {
-  border: none; }
+  border: none;
+  cursor: pointer; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: inherit; }
 
 body {
   font-family: "Lato", sans-serif;
   font-size: 16px; }
+  @media only screen and (max-width: 1024px) {
+    body {
+      font-size: 12px; } }
+  @media only screen and (max-width: 800px) {
+    body {
+      font-size: 9px; } }
+  @media only screen and (max-width: 612px) {
+    body {
+      font-size: 7px; } }
 
 .app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100vh;
-  background: #F3FFBD; }
+  background-color: #F3FFBD; }
 
-.nav .logo {
-  text-align: center;
-  font-size: 5em;
-  font-weight: 400;
-  color: #FF1654; }
-  .nav .logo__bold {
-    font-weight: 900; }
+.nav {
+  position: absolute;
+  top: 0;
+  width: 100%; }
+  .nav .logo {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 5em;
+    font-weight: 400;
+    color: #FF1654; }
+    .nav .logo__bold {
+      font-weight: 900; }
+
+.quotesContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 800px;
+  height: 400px;
+  padding: 30px;
+  margin: 0 auto;
+  border-radius: 20px;
+  background-color: #FF1654; }
+  .quotesContainer .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px; }
+    .quotesContainer .menu .new_quote {
+      height: 100%;
+      width: 100px; }
+    .quotesContainer .menu .share_twitt {
+      width: 50px;
+      height: 100%;
+      background-color: #00aced; }
+      .quotesContainer .menu .share_twitt__img {
+        width: 100%;
+        height: 100%; }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+  .footer__info {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 1em;
+    font-weight: 400;
+    color: #808080; }
