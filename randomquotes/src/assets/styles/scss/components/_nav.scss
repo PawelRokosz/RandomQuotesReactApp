@@ -1,0 +1,17 @@
+// *********************************
+// Nav
+// *********************************
+
+.nav {
+
+  .logo {
+    text-align: center;
+    font-size: 5em;
+    font-weight: 400;
+    color: $secondary-color;
+
+    &__bold {
+      font-weight: 900;
+    }
+  }
+}
