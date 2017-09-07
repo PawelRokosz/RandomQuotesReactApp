@@ -20,12 +20,6 @@ body {
   @media only screen and (max-width: 800px) {
     body {
       font-size: 13px; } }
-  @media only screen and (max-width: 612px) {
-    body {
-      font-size: 11px; } }
-  @media only screen and (max-width: 512px) {
-    body {
-      font-size: 9px; } }
 
 .app {
   display: flex;
@@ -42,9 +36,12 @@ body {
   .nav .logo {
     padding-top: 20px;
     text-align: center;
-    font-size: 4em;
+    font-size: 3em;
     font-weight: 400;
     color: #FF1654; }
+    @media only screen and (max-height: 500px) {
+      .nav .logo {
+        color: #F3FFBD; } }
     .nav .logo__bold {
       font-weight: 900; }
 
@@ -59,6 +56,12 @@ body {
   margin: 0 auto;
   border-radius: 20px;
   background-color: #FF1654; }
+  @media only screen and (max-height: 500px) {
+    .quotesContainer {
+      width: 100%;
+      height: 100vh;
+      border-radius: 0;
+      padding: 30px 30px 70px 30px; } }
   .quotesContainer .quote {
     display: flex;
     flex-direction: column;
@@ -74,6 +77,9 @@ body {
       height: 100%;
       font-size: 1.5em;
       font-weight: 300; }
+      @media only screen and (max-height: 500px) {
+        .quotesContainer .quote .quote-text {
+          margin-top: 40px; } }
     .quotesContainer .quote .quote-footer {
       height: auto;
       margin-top: 10px; }
@@ -117,3 +123,6 @@ body {
     color: #808080; }
   .footer__link:hover {
     color: #FF1654; }
+    @media only screen and (max-height: 500px) {
+      .footer__link:hover {
+        color: #F3FFBD; } }

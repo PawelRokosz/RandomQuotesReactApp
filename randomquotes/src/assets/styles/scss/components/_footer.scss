@@ -19,6 +19,10 @@
 
     &:hover{
       color: $secondary-color;
+
+      @include respond-at-height(500px){
+        color: $main-color;
+      }
     }
   }
 }

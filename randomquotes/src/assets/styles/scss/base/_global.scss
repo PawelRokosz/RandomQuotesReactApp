@@ -1,20 +1,24 @@
+// *********************************
+// Global
+// *********************************
+
 body {
   font-family: $main-font;
   font-size: 16px;
 
-  @include respond-at(1024px){
+  @include respond-at-width(1024px){
     font-size: 15px;
   }
 
-  @include respond-at(800px){
+  @include respond-at-width(800px){
     font-size: 13px;
   }
-
-  @include respond-at(612px){
-    font-size: 11px;
-  }
-
-  @include respond-at(512px){
-    font-size: 9px;
-  }
+  //
+  // @include respond-at(612px){
+  //   font-size: 11px;
+  // }
+  //
+  // @include respond-at(512px){
+  //   font-size: 9px;
+  // }
 }
