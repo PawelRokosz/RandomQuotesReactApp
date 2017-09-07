@@ -16,13 +16,16 @@ body {
   font-size: 16px; }
   @media only screen and (max-width: 1024px) {
     body {
-      font-size: 12px; } }
+      font-size: 15px; } }
   @media only screen and (max-width: 800px) {
     body {
-      font-size: 9px; } }
+      font-size: 13px; } }
   @media only screen and (max-width: 612px) {
     body {
-      font-size: 7px; } }
+      font-size: 11px; } }
+  @media only screen and (max-width: 512px) {
+    body {
+      font-size: 9px; } }
 
 .app {
   display: flex;
@@ -39,7 +42,7 @@ body {
   .nav .logo {
     padding-top: 20px;
     text-align: center;
-    font-size: 5em;
+    font-size: 4em;
     font-weight: 400;
     color: #FF1654; }
     .nav .logo__bold {
@@ -50,21 +53,50 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  width: 800px;
-  height: 400px;
+  width: 600px;
+  height: 300px;
   padding: 30px;
   margin: 0 auto;
   border-radius: 20px;
   background-color: #FF1654; }
+  .quotesContainer .quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    padding-bottom: 10px;
+    color: #fff;
+    text-align: center; }
+    .quotesContainer .quote .quote-text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      font-size: 1.5em;
+      font-weight: 300; }
+    .quotesContainer .quote .quote-footer {
+      height: auto;
+      margin-top: 10px; }
   .quotesContainer .menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 50px; }
+    height: 50px;
+    min-height: 50px; }
     .quotesContainer .menu .new_quote {
       height: 100%;
-      width: 100px; }
+      width: 100px;
+      background: transparent;
+      color: #F3FFBD;
+      border: 2px solid #F3FFBD;
+      border-radius: 5px;
+      font-weight: 400;
+      font-size: 1em;
+      transition: all 0.5s ease; }
+      .quotesContainer .menu .new_quote:hover {
+        background: #F3FFBD;
+        color: #FF1654; }
     .quotesContainer .menu .share_twitt {
       width: 50px;
       height: 100%;
@@ -83,3 +115,5 @@ body {
     font-size: 1em;
     font-weight: 400;
     color: #808080; }
+  .footer__link:hover {
+    color: #FF1654; }

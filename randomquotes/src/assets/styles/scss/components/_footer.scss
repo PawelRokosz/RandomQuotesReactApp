@@ -14,4 +14,11 @@
     font-weight: 400;
     color: $additional-color;
   }
+
+  &__link {
+
+    &:hover{
+      color: $secondary-color;
+    }
+  }
 }

@@ -3,14 +3,18 @@ body {
   font-size: 16px;
 
   @include respond-at(1024px){
-    font-size: 12px;
+    font-size: 15px;
   }
 
   @include respond-at(800px){
-    font-size: 9px;
+    font-size: 13px;
   }
 
   @include respond-at(612px){
-    font-size: 7px;
+    font-size: 11px;
+  }
+
+  @include respond-at(512px){
+    font-size: 9px;
   }
 }
