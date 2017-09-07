@@ -23,4 +23,5 @@ Follow the instructions below
 
 1. Open a browser and access [http://localhost:3000](http://localhost:3000)
 
+----------
 This project was crated by Pawel Rokosz
