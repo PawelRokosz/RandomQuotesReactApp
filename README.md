@@ -25,3 +25,4 @@ Follow the instructions below
 
 ----------
 This project was crated by Pawel Rokosz
+Check it live: [https://pawelrokosz.github.io/RandomQuotesReactApp/](https://pawelrokosz.github.io/RandomQuotesReactApp/)
