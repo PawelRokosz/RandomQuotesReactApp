@@ -18,6 +18,10 @@
       color: $main-color;
     }
 
+    @include respond-at-height(300px){
+      display: none;
+    }
+
     &__bold {
       font-weight: 900;
     }

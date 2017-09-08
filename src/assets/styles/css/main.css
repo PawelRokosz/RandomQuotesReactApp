@@ -42,6 +42,9 @@ body {
     @media only screen and (max-height: 500px) {
       .nav .logo {
         color: #F3FFBD; } }
+    @media only screen and (max-height: 300px) {
+      .nav .logo {
+        display: none; } }
     .nav .logo__bold {
       font-weight: 900; }
 
@@ -80,6 +83,9 @@ body {
       @media only screen and (max-height: 500px) {
         .quotesContainer .quote .quote-text {
           margin-top: 40px; } }
+      @media only screen and (max-height: 300px) {
+        .quotesContainer .quote .quote-text {
+          margin-top: 0; } }
     .quotesContainer .quote .quote-footer {
       height: auto;
       margin-top: 10px; }
