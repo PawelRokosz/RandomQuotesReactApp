@@ -33,7 +33,7 @@ class QuotesContainer extends React.Component {
             <div><span className="quote-footer__author">{author}</span></div>
             <div>
               <span className="quote-footer__source">
-                <a href={this.state.source} target="_blank" rel="noopener noreferrer">{source}</a>
+                <a href={source} target="_blank" rel="noopener noreferrer">{source}</a>
               </span>
             </div>
           </div>
