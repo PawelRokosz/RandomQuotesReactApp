@@ -6,8 +6,6 @@ class QuotesContainer extends React.Component {
   constructor(props) {
     super(props);
 
-    this.handleNewQuoteClick = this.handleNewQuoteClick.bind(this);
-
     this.state = {
       author: quotes[0].author,
       quote: quotes[0].quote,
@@ -25,26 +23,28 @@ class QuotesContainer extends React.Component {
   }
 
   render() {
+    const { author, quote, source } = this.state
+
     return (
       <div className="quotesContainer">
         <div className="quote">
-          <div className="quote-text"><span>{this.state.quote}</span></div>
+          <div className="quote-text"><span>{quote}</span></div>
           <div className="quote-footer">
-            <div><span className="quote-footer__author">{this.state.author}</span></div>
+            <div><span className="quote-footer__author">{author}</span></div>
             <div>
               <span className="quote-footer__source">
-                <a href={this.state.source} target="_blank" rel="noopener noreferrer">{this.state.source}</a>
+                <a href={this.state.source} target="_blank" rel="noopener noreferrer">{source}</a>
               </span>
             </div>
           </div>
         </div>
         <div className="menu">
           <button className="share_twitt">
-            <a href={'https://twitter.com/intent/tweet?text=' + this.state.quote + 'by@' + this.state.author + 'from' + this.state.source} target="_blank" rel="noopener noreferrer">
+            <a href={'https://twitter.com/intent/tweet?text=' + quote + 'by@' + author + 'from' + source} target="_blank" rel="noopener noreferrer">
               <img className="share_twitt__img" src={twitterLogo} alt="twitter logo"/>
             </a>
           </button>
-          <button className="new_quote" onClick={this.handleNewQuoteClick}>New Quote</button>
+          <button className="new_quote" onClick={() => this.handleNewQuoteClick()}>New Quote</button>
         </div>
       </div>
     );
